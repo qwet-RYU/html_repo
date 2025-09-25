@@ -1,0 +1,85 @@
+.box{
+  background: radial-gradient(125% 125% at 50% 10%, #000000 40%, #2b0707 100%);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding-left: 12px;
+  text-align: left;
+}
+
+@keyframes rainbow {
+  0% { border-color: red; }
+  25% { border-color: orange; }
+  50% { border-color: yellow; }
+  75% { border-color: green; }
+  100% { border-color: blue; }
+}
+
+.avatar {
+  width: 220px;          /* atau 250px sesuai kebutuhan */
+  height: 220px;         /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover;     /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+  animation: rainbow 3s infinite;
+}
+
+.photo {
+  border: 3px solid #e5e7eb;
+  border-radius: 12px;
+  animation: rainbow 3s infinite;
+}
+
+.section-title {
+  padding-left: 10px;      /* ruang agar teks tidak mepet garis */
+  border-left: 6px solid #22c55e; /* garis aksen di kiri */
+}
+
+body{
+  background: radial-gradient(125% 125% at 50% 100%, #000000 40%, #010133 100%);
+}
+
+p, li {
+    color: white;
+    font: 16px calibri ,sans-serif;
+}
+
+.alter_color {
+    color: gray;
+    font: 20px calibri ,sans-serif;
+}    
+
+h1, h3, h4 {
+    color: lightskyblue;
+    font: 20px calibri ,sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  width: 750px;
+  margin:  auto;
+  margin-top: 50px;
+}
+
+img[alt="Logo"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p[alt="footer"] {
+  text-align: center;
+}
+
+.box:hover {
+  background: radial-gradient(125% 125% at 50% 10%, #000000 40%, #2b0707 100%);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding-left: 12px;
+  text-align: left;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  animation: rainbow 3s infinite;
+}
