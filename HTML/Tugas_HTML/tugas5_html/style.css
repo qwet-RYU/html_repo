@@ -1,0 +1,136 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+<
+
+.button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* wadah/parent flexbox */
+.flexbox-area {
+  /* wajib flex */
+  display: flex;
+  /* atur arah flex items */
+  /* default = row (row-reverse, column, column-reverse) */
+  flex-direction: row;
+  /* atur jarak antar items */
+  gap: 12px;
+  /* atur posisi horizontal */
+  /* default = flex-start (flex-end,center,space-between) */
+  justify-content: center;
+  /* atur penempatan items */
+  /* default = flex-start (flex-end,center,stretch,dll) */
+  align-items: center;
+}
+.card:hover {
+  transition: 0.5ms;
+  border: 2px solid blue;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(209, 142, 17) ;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.alert-info {
+  background: #a0e3fd;
+  justify-content: space-between;
+  padding: 10px;
+}
+.alert-info button {
+  font-size: 12px;
+  background: #52a6d0;
+}
+
+.profile-card {
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  text-align: center;
+  border-radius: 10px;
+}
+.profile-card .avatar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+.profile-card .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #333;
+  object-fit: cover;
+}
+.profile-card .avatar .badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: green;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+.profile-card h3 {
+  margin: 10px 0 5px;
+}     
+
+.profile-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
