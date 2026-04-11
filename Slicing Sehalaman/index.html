@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Funiro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-['Poppins'] bg-white">
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="px-4 lg:px-10 py-4 flex items-center justify-between">
+
+            <a href="#" class="flex-shrink-0">
+                <img src="https://furniro-ecommerce-blue.vercel.app/images/logo.png" alt="Funiro Logo" class="h-10">
+            </a>
+            
+            
+            <div class="hidden lg:flex items-center gap-8 text-base font-medium">
+                <a href="#" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Shop</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+            
+            
+            <div class="hidden lg:flex items-center gap-4">
+                <img src="https://furniro-ecommerce-blue.vercel.app/images/user_icon.png" alt="User" class="w-6 h-6 cursor-pointer hover:opacity-70">
+                <img src="https://furniro-ecommerce-blue.vercel.app/images/search_icon.png" alt="Search" class="w-6 h-6 cursor-pointer hover:opacity-70">
+                <img src="https://furniro-ecommerce-blue.vercel.app/images/heart_icon.png" alt="Wishlist" class="w-6 h-6 cursor-pointer hover:opacity-70">
+                <img src="https://furniro-ecommerce-blue.vercel.app/images/cart_icon.png" alt="Cart" class="w-6 h-6 cursor-pointer hover:opacity-70">
+            </div>
+            
+            
+            <button id="mobile-toggle" class="lg:hidden p-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t shadow-lg">
+            <div class="px-4 py-4 space-y-4 text-base font-medium">
+                <a href="#" class="block py-2 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#" class="block py-2 hover:text-blue-600 transition-colors">Shop</a>
+                <a href="#" class="block py-2 hover:text-blue-600 transition-colors">About</a>
+                <a href="#" class="block py-2 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-hero flex flex-col justify-center items-end w-full h-[calc(100vh-73px)] bg-no-repeat bg-cover bg-bottom" style="background-image: url('https://furniro-ecommerce-blue.vercel.app/images/hero.jpg');">
+        <div class="bg-[#FFF3E3] mx-4 md:mr-[56px] md:ml-0 inline-block rounded-[10px] px-4 md:px-[39px] pt-[37px]  md:pt-[62px] pb-[37px]">
+            <p class="text-customBlack font-semibold text-normal">New Arrival</p>
+            <p class="text-primary py-4 md:py-2 text-header leading-tight md:text-large font-bold">
+                Discover Our <br/>New Collection
+            </p>
+            <p class="text-customGray text-[18px] mb-[46px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Ut elit tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90 px-4 py-2 bg-primary text-white font-bold md:w-[245px] select-none rounded-[0px] hover:opacity-90 hover:bg-primary h-[70px] w-[222px]" type="button">BUY NOW</button>
+        </div>
+    </section>
+
+     <footer class="bg-white pt-20 pb-10 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-16 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-200 pb-12">
+            <div class="space-y-8">
+                <h3 class="text-2xl font-bold">Furniro.</h3>
+                <p class="text-[#9F9F9F]">400 University Drive Suite 200 Coral Gables, <br> FL 33134 USA</p>
+            </div>
+            <div class="space-y-8">
+                <h4 class="text-[#9F9F9F] font-medium">Links</h4>
+                <ul class="font-medium space-y-6">
+                    <li>Home</li><li>Shop</li><li>About</li><li>Contact</li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h4 class="text-[#9F9F9F] font-medium">Help</h4>
+                <ul class="font-medium space-y-6">
+                    <li>Payment Options</li><li>Returns</li><li>Privacy Policies</li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h4 class="text-[#9F9F9F] font-medium">Newsletter</h4>
+                <div class="flex gap-4 border-b border-black pb-2">
+                    <input type="text" placeholder="Enter Your Email Address" class="outline-none text-sm w-full">
+                    <button class="font-bold text-sm">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <p class="px-16 pt-8">2023 furino. All rights reserved</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mobile-toggle');
+        const menu = document.getElementById('mobile-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
